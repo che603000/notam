@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import LMap from './components/lmap';
+import Notam from './components/notam';
+import Search from './components/search';
 import './App.css';
+import {Container, Row, Col} from 'react-bootstrap';
+
+import {Provider} from 'react-redux';
+import store from './store';
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Provider store={store}>
+                <Container>
+                    <Row>
+                        <Col xl={9}>NOTAM</Col>
+                        <Col xl={3}>
+                            <Search/>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xl={3}>
+                            <Notam/>
+                        </Col>
+                        <Col xl={9}>
+                            <LMap/>
+                        </Col>
+                    </Row>
+                </Container>
+            </Provider>
+        );
+    }
 }
 
 export default App;

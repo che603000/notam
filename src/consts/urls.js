@@ -1,0 +1,1 @@
+export const URL_NOTAM_ID ='/api/info/zone';

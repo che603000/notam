@@ -1,7 +1,7 @@
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk';
-import search from './reducers/search';
-import notam from './reducers/notam';
+import search from '../reducers/search';
+import notam from '../reducers/notam';
 
 
 const redusers = combineReducers({

@@ -2,32 +2,25 @@
 import React, {Component} from 'react';
 import {Button, FormControl, InputGroup} from "react-bootstrap";
 import {connect} from 'react-redux';
-import {NOTAM_ERROR, NOTAM_LOADING, NOTAM_SUCCESS, SEARCH_VALUE} from '../store/action-names'
+import {notamFetch} from '../utils/loaders'
+import {NOTAM_ERROR, NOTAM_LOADING, NOTAM_SUCCESS, SEARCH_VALUE} from '../consts/action-names'
 
 
-const fetchNotam = (value) => dispatch => {
+const notamLoad = (value) => dispatch => {
     dispatch({type: NOTAM_LOADING});
-    new Promise((res, rej) => {
-        setTimeout(() => {
-            res(`${value}\ntext = ${Date.now()}`);
-            //rej('Error net ...');
-        }, 2000)
-
-    })
-        .then(text => dispatch({type: NOTAM_SUCCESS, text}))
-        .catch(text => dispatch({type: NOTAM_ERROR, text}))
+    notamFetch(value)
+        .then(fields => dispatch({type: NOTAM_SUCCESS, fields}))
+        .catch(err => dispatch({type: NOTAM_ERROR, error: err.message}));
 };
-
 
 const mapDispatchToProps = () => dispatch => {
     return {
         actionValueSearch: (value) => {
             dispatch({type: SEARCH_VALUE, value: value.toUpperCase()});
         },
-        actionAsyncSearch: (value) => dispatch(fetchNotam(value))
+        actionAsyncSearch: (value) => dispatch(notamLoad(value))
     };
 };
-
 
 class Search extends Component {
 
@@ -55,7 +48,7 @@ class Search extends Component {
                     />
                     <InputGroup.Append>
                         <Button variant="outline-secondary" disabled={loading}
-                                onClick={e => this.onClick()}>Button</Button>
+                                onClick={() => this.onClick()}>Button</Button>
                     </InputGroup.Append>
                 </InputGroup>
 

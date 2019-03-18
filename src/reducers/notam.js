@@ -1,5 +1,5 @@
 
-import {NOTAM_ERROR, NOTAM_LOADING, NOTAM_SUCCESS} from '../action-names'
+import {NOTAM_ERROR, NOTAM_LOADING, NOTAM_SUCCESS} from '../consts/action-names'
 
 export default  (state = {}, action) => {
     //debugger;
@@ -7,14 +7,14 @@ export default  (state = {}, action) => {
         case NOTAM_SUCCESS:
             return {
                 ...state,
-                text: action.text,
+                fields: action.fields,
                 error: false
             };
         case NOTAM_ERROR:
             return {
                 ...state,
-                text: action.text,
-                error: true
+                error: action.error,
+                fields: null,
             };
         case NOTAM_LOADING:
             return {

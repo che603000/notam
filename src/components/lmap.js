@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import L from 'leaflet';
 import store from "../store";
-
+import observe from 'redux-observe';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import {points} from '../utils/libs';
 
 let DefaultIcon = L.icon({
     iconUrl: icon,
@@ -37,7 +38,8 @@ class LMap extends Component {
         })
             .addTo(this._map);
 
-        store.subscribe(() => this.onStore(store.getState(), this._map));
+        //store.subscribe(() => this.onStore(store.getState(), this._map));
+        observe(store, state => state.notam.elements, el => this.onStore(el(), this._map));
     }
 
     shouldComponentUpdate() {
@@ -45,15 +47,19 @@ class LMap extends Component {
     }
 
     onStore(state, map) {
-        const {search} = state;
-        if (search.loading) {
-            this.marker = L.marker([56, 43]).addTo(map);
-        } else {
-            if (this.marker) {
-                this.marker.removeFrom(map);
-                this.marker = null;
-            }
-        }
+        state.forEach(el => {
+            const {text} = el;
+            const path = points(text);
+            if(!path)
+                return;
+            if (this.line) {
+                this.line.setLatLngs(path);
+            } else
+                this.line = L.polyline(path, {color: 'red'}).addTo(map);
+
+            map.fitBounds(this.line.getBounds());
+
+        });
         //debugger;
     }
 }

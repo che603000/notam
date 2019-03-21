@@ -1,8 +1,9 @@
 //import {} from 'react-redux'
 import React, {Component} from 'react';
-import {Form} from "react-bootstrap";
+import {Form, ButtonToolbar, ButtonGroup, Button} from "react-bootstrap";
+import { FaMinus, FaCircle, FaDrawPolygon, FaRoute, FaTrash} from 'react-icons/fa';
 import {connect} from 'react-redux';
-import {NOTAM_LOADING, NOTAM_SUCCESS} from '../consts/action-names'
+import {NOTAM_LOADING, NOTAM_SUCCESS, NOTAM_ADD, NOTAM_REMOVE, NOTAM_VALUE} from '../consts/action-names'
 
 const mapDispatchToProps = () => dispatch => {
     return {
@@ -20,6 +21,44 @@ const mapDispatchToProps = () => dispatch => {
     }
 };
 
+class Field extends Component {
+
+    onChange(value) {
+        this.props.dispatch({type: NOTAM_VALUE, id: this.props.id, value});
+    }
+
+    onRemove() {
+        this.props.dispatch({type: NOTAM_REMOVE, id: this.props.id});
+    }
+
+    render() {
+        const {text} = this.props;
+        return (
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Example textarea</Form.Label>
+                <ButtonToolbar aria-label="Toolbar with button groups">
+                    <ButtonGroup size={'sm'} className="" aria-label="First group">
+                        <Button variant="light" onClick={() => this.onRemove()}><FaTrash/></Button>
+                        <Button variant="light"><FaCircle/></Button>
+                        <Button variant="light"><FaDrawPolygon/></Button>
+                        <Button variant="light"><FaRoute/></Button>
+
+                    </ButtonGroup>
+                </ButtonToolbar>
+                <Form.Control as="textarea"
+                              rows="4"
+                              value={text}
+                              //readOnly={true}
+                              onChange={e => this.onChange(e.target.value)}
+                              style={{fontSize: 'small'}}
+                    // isInvalid={!!error}
+                />
+                {/*<Form.Control.Feedback type="invalid">{error}</Form.Control.Feedback>*/}
+            </Form.Group>
+
+        )
+    }
+}
 
 class Notam extends Component {
 
@@ -28,8 +67,12 @@ class Notam extends Component {
     //     actionAsyncSearch("K0543-19");
     // };
 
+    onAdd() {
+        this.props.dispatch({type: NOTAM_ADD})
+    }
+
     render() {
-        const {fields, error} = this.props;
+        const {fields, error, elements, dispatch} = this.props;
         const E = fields ? fields.E : "";
         const Q = fields ? fields.Q : "";
         return (
@@ -65,17 +108,8 @@ class Notam extends Component {
                 {/*<option>5</option>*/}
                 {/*</Form.Control>*/}
                 {/*</Form.Group>*/}
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label >Example textarea</Form.Label>
-                    <Form.Control as="textarea"
-                                  rows="10"
-                                  value={E}
-                                  readOnly={true}
-                                  style={{fontSize: 'small'}}
-                                  isInvalid={!!error}
-                    />
-                    <Form.Control.Feedback type="invalid">{error}</Form.Control.Feedback>
-                </Form.Group>
+                {elements.map(el => <Field text={el.text} key={el.id} id={el.id} dispatch={dispatch}/>)}
+                <Button onClick={() => this.onAdd()}>+</Button>
             </Form>
 
         )

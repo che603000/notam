@@ -8,11 +8,13 @@ export const point = (str) => {
 
 export const points = (str) => {
     const m = str.match(/\d{4,6}[СCNЮS]\d{5,7}[EWВЗЕ]/g);
-
-    return m.reduce((res, coords) => {
-        res.push(point(coords));
-        return res;
-    }, []);
+    if (m)
+        return m.reduce((res, coords) => {
+            res.push(point(coords));
+            return res;
+        }, []);
+    else
+        return null;
 
 
 };

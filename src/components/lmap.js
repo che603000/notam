@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import L from 'leaflet';
-import store from "../store";
-import observe from 'redux-observe';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import {points} from '../utils/libs';
+import initMap from '../lmap';
+//import app from '../consts/app';
 
 let DefaultIcon = L.icon({
     iconUrl: icon,
@@ -12,7 +11,6 @@ let DefaultIcon = L.icon({
 });
 
 L.Marker.prototype.options.icon = DefaultIcon;
-
 
 class LMap extends Component {
     render() {
@@ -25,7 +23,7 @@ class LMap extends Component {
 
     componentDidMount() {
         //this.store = this.props.store;
-        this._map = L.map("lmap", {
+        const _map = L.map("lmap", {
             center: [56, 43],
             zoom: 6
         });
@@ -36,32 +34,16 @@ class LMap extends Component {
                 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             id: 'mapbox.streets'
         })
-            .addTo(this._map);
+            .addTo(_map);
 
-        //store.subscribe(() => this.onStore(store.getState(), this._map));
-        observe(store, state => state.notam.elements, el => this.onStore(el(), this._map));
+        initMap(_map);
     }
 
     shouldComponentUpdate() {
         return false;
     }
 
-    onStore(state, map) {
-        state.forEach(el => {
-            const {text} = el;
-            const path = points(text);
-            if(!path)
-                return;
-            if (this.line) {
-                this.line.setLatLngs(path);
-            } else
-                this.line = L.polyline(path, {color: 'red'}).addTo(map);
 
-            map.fitBounds(this.line.getBounds());
-
-        });
-        //debugger;
-    }
 }
 
 export default LMap;

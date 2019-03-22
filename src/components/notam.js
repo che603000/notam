@@ -1,7 +1,7 @@
 //import {} from 'react-redux'
 import React, {Component} from 'react';
 import {Form, ButtonToolbar, ButtonGroup, Button} from "react-bootstrap";
-import { FaMinus, FaCircle, FaDrawPolygon, FaRoute, FaTrash} from 'react-icons/fa';
+import {FaMinus, FaCircle, FaDrawPolygon, FaRoute, FaTrash} from 'react-icons/fa';
 import {connect} from 'react-redux';
 import {NOTAM_LOADING, NOTAM_SUCCESS, NOTAM_ADD, NOTAM_REMOVE, NOTAM_VALUE} from '../consts/action-names'
 
@@ -24,15 +24,15 @@ const mapDispatchToProps = () => dispatch => {
 class Field extends Component {
 
     onChange(value) {
-        this.props.dispatch({type: NOTAM_VALUE, id: this.props.id, value});
+        this.props.dispatch({type: NOTAM_VALUE, value});
     }
 
     onRemove() {
-        this.props.dispatch({type: NOTAM_REMOVE, id: this.props.id});
+        this.props.dispatch({type: NOTAM_REMOVE});
     }
 
     render() {
-        const {text} = this.props;
+        const {value} = this.props;
         return (
             <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Example textarea</Form.Label>
@@ -42,13 +42,12 @@ class Field extends Component {
                         <Button variant="light"><FaCircle/></Button>
                         <Button variant="light"><FaDrawPolygon/></Button>
                         <Button variant="light"><FaRoute/></Button>
-
                     </ButtonGroup>
                 </ButtonToolbar>
                 <Form.Control as="textarea"
-                              rows="4"
-                              value={text}
-                              //readOnly={true}
+                              rows="10"
+                              value={value}
+                              readOnly={true}
                               onChange={e => this.onChange(e.target.value)}
                               style={{fontSize: 'small'}}
                     // isInvalid={!!error}
@@ -72,9 +71,7 @@ class Notam extends Component {
     }
 
     render() {
-        const {fields, error, elements, dispatch} = this.props;
-        const E = fields ? fields.E : "";
-        const Q = fields ? fields.Q : "";
+        const {E, Q, error, dispatch} = this.props;
         return (
             <Form>
                 <Form.Group controlId="exampleForm.ControlInput1">
@@ -87,20 +84,11 @@ class Notam extends Component {
                         style={{fontSize: 'small'}}
                         isInvalid={!!error}
                     />
+                    <Form.Control.Feedback type="invalid">{error}</Form.Control.Feedback>
                 </Form.Group>
-                <Form.Group controlId="exampleForm.ControlSelect1">
-                    <Form.Label>Example select</Form.Label>
-                    <Form.Control as="select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </Form.Control>
-                </Form.Group>
-                {/*<Form.Group controlId="exampleForm.ControlSelect2">*/}
-                {/*<Form.Label>Example multiple select</Form.Label>*/}
-                {/*<Form.Control as="select" multiple>*/}
+                {/*<Form.Group controlId="exampleForm.ControlSelect1">*/}
+                {/*<Form.Label>Example select</Form.Label>*/}
+                {/*<Form.Control as="select">*/}
                 {/*<option>1</option>*/}
                 {/*<option>2</option>*/}
                 {/*<option>3</option>*/}
@@ -108,8 +96,9 @@ class Notam extends Component {
                 {/*<option>5</option>*/}
                 {/*</Form.Control>*/}
                 {/*</Form.Group>*/}
-                {elements.map(el => <Field text={el.text} key={el.id} id={el.id} dispatch={dispatch}/>)}
-                <Button onClick={() => this.onAdd()}>+</Button>
+                <Field value={E} dispatch={dispatch}/>
+                {/*<Button onClick={() => this.onAdd()}>+</Button>*/}
+
             </Form>
 
         )

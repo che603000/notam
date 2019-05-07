@@ -1,5 +1,5 @@
 import {URL_NOTAM_ID} from '../consts/urls';
-import parser from '../utils/fields-parser'
+import parser from '../notam/decodes/fields-parser';
 
 export const notamFetch = (id) => {
     const path = encodeURI(`items[]=NOTAMZ-${id}`);

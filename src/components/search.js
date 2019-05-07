@@ -29,7 +29,8 @@ class Search extends Component {
         actionValueSearch(value);
     }
 
-    onClick() {
+    onClick = e => {
+        e.preventDefault();
         const {actionAsyncSearch, value} = this.props;
         actionAsyncSearch(value);
     };
@@ -38,20 +39,23 @@ class Search extends Component {
         const {loading, value = ""} = this.props;
         return (
             <div>
-                <InputGroup className="mb-3">
-                    <FormControl disabled={loading}
-                                 onChange={e => this.onInput(e.target.value)}
-                                 value={value}
-                                 placeholder="Recipient's username"
-                                 aria-label="Recipient's username"
-                                 aria-describedby="basic-addon2"
-                    />
-                    <InputGroup.Append>
-                        <Button variant="outline-secondary" disabled={loading}
-                                onClick={() => this.onClick()}>Button</Button>
-                    </InputGroup.Append>
-                </InputGroup>
-
+                <form onSubmit={this.onClick}>
+                    <InputGroup className="mb-3">
+                        <FormControl disabled={loading}
+                                     onChange={e => this.onInput(e.target.value)}
+                                     value={value}
+                                     placeholder="Recipient's username"
+                                     aria-label="Recipient's username"
+                                     aria-describedby="basic-addon2"
+                        />
+                        <InputGroup.Append>
+                            <Button variant="outline-secondary"
+                                    type="submit"
+                                    disabled={loading}
+                            >Load</Button>
+                        </InputGroup.Append>
+                    </InputGroup>
+                </form>
             </div>
         )
     }

@@ -1,5 +1,4 @@
-﻿
-const fieldsOptions = [
+﻿const fieldsOptions = [
     {name: "H", reg: /(\D\d+\s*\/\s*\d{2}\S*\s+(НОТАМ|NOTAM)\D)/},
     {name: "Q", reg: /[QЩ]\)([\s\S]+?)(?=[AА]\))/i},
     {name: "A", reg: /[AА]\)([\s\S]+?)(?=[BБ]\))/i},
@@ -13,7 +12,18 @@ const fieldsOptions = [
 ];
 
 module.exports = (text) => {
-    const _text = text.trim(')').trim('(');
+    const _text = Array
+        .from(text)
+        .filter((s, index, items) => {
+            if (index === 0 && s === '(')
+                return false;
+            if (index === items.length - 1 && s === ')')
+                return false;
+            return true;
+        })
+        .join('')
+        .replace(/\s{2,10}/g, ' ');
+
     return fieldsOptions.reduce((res, options) => {
         const r = options.reg.exec(_text);
         if (r)

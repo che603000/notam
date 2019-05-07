@@ -2,9 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e940af-7731-40f1-b2af-fdafa6792e4e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/maps/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/data/admin_level_2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/alts-decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/date-decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/q-decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/date-decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/days-week.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/months.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/temp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/tests/date-time-strings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/tests/test-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/tests/test-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/time-decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/schedule/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/decodes/time-decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/geometrics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/libs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/polygons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notam/roles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/translate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consts/action-names.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/consts/action-names.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/notam.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/notam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/fields-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/notam/decodes/fields-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/loaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/loaders.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +51,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/utils/fields-parser.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/notam.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="102">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#31#70#0" expanded="true" />
+                <element signature="n#!!block;n#render#0;n#Notam#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/notam.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/consts/action-names.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/lmap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#LMap#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#LMap#0" />
+                <element signature="n#!!block;n#shouldComponentUpdate#0;n#LMap#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="10" />
+              <folding>
+                <element signature="e#31#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/maps/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="10" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/notam/polygons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/notam/libs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2057">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
+              <folding>
+                <element signature="e#0#46#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/notam/decodes/time-decode.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -38,6 +163,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>lg</find>
+      <find>_en2ru</find>
+      <find>_.</find>
+      <find>LatLon</find>
+      <find>onStore</find>
     </findStrings>
     <replaceStrings>
       <replace>xl</replace>
@@ -51,25 +180,36 @@
       <list>
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/notam.js" />
-        <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/lmap.js" />
         <option value="$PROJECT_DIR$/src/store/action-names.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/store/reducers/search.js" />
         <option value="$PROJECT_DIR$/src/consts/urls.js" />
-        <option value="$PROJECT_DIR$/src/reducers/notam.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/reducers/search.js" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/components/search.js" />
         <option value="$PROJECT_DIR$/src/utils/fields-parser.js" />
         <option value="$PROJECT_DIR$/src/utils/loaders.js" />
-        <option value="$PROJECT_DIR$/src/components/search.js" />
+        <option value="$PROJECT_DIR$/src/notam/decodes/fields-parser.js" />
+        <option value="$PROJECT_DIR$/src/notam/decodes/q-decode.js" />
+        <option value="$PROJECT_DIR$/src/utils/translate.js" />
+        <option value="$PROJECT_DIR$/src/notam/decodes/alts-decode.js" />
+        <option value="$PROJECT_DIR$/src/notam/geometrics.js" />
+        <option value="$PROJECT_DIR$/src/notam/decodes/schedule/time-decode.js" />
+        <option value="$PROJECT_DIR$/src/notam/decodes/time-decode.js" />
+        <option value="$PROJECT_DIR$/src/notam/libs.js" />
+        <option value="$PROJECT_DIR$/src/notam/polygons.js" />
+        <option value="$PROJECT_DIR$/src/components/lmap.js" />
+        <option value="$PROJECT_DIR$/src/consts/action-names.js" />
+        <option value="$PROJECT_DIR$/src/reducers/notam.js" />
         <option value="$PROJECT_DIR$/src/components/notam.js" />
+        <option value="$PROJECT_DIR$/src/maps/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-24" />
-    <option name="y" value="318" />
-    <option name="width" value="1936" />
+    <option name="x" value="55" />
+    <option name="width" value="1790" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -80,7 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,21 +236,30 @@
               <item name="notam" type="b2602c69:ProjectViewProjectNode" />
               <item name="notam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/notam/data" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="E:\projects\notam\node_modules\eslint" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="E:\projects\notam\node_modules\eslint" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -119,14 +267,16 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\notam\src\notam\data" />
+      <recent name="E:\projects\notam\src\utils" />
+      <recent name="E:\projects\notam\src\notam" />
+      <recent name="D:\projects\notam\src" />
+      <recent name="D:\projects\notam\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\notam\src" />
       <recent name="D:\projects\notam\src\consts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\notam\src" />
-      <recent name="D:\projects\notam\src\components" />
-      <recent name="D:\projects\notam\src\store\reducers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -170,7 +320,9 @@
       <workItem from="1552862976548" duration="374000" />
       <workItem from="1552895247538" duration="5066000" />
       <workItem from="1552913705068" duration="1100000" />
-      <workItem from="1552914832837" duration="1379000" />
+      <workItem from="1552914832837" duration="1421000" />
+      <workItem from="1557226474521" duration="9109000" />
+      <workItem from="1557237725390" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1552862799734</created>
@@ -179,11 +331,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552862799734</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add turf module">
+      <created>1552916237599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552916237599</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23065000" />
+    <option name="totallyTimeSpent" value="32824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -201,8 +360,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50316125" side_tool="true" visible="true" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49683878" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.2829294" side_tool="true" visible="true" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.7170706" visible="true" weight="0.32900432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -213,7 +372,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="add turf module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add turf module" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.css">
@@ -233,16 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -255,55 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/lmap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#render#0;n#LMap#0" />
-            <element signature="n#!!block;n#shouldComponentUpdate#0;n#LMap#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/consts/action-names.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!block;n#dependencies#0;n#!!top" />
-            <element signature="n#!!block;n#eslintConfig#0;n#!!top" />
-            <element signature="e#572#648#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/libs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#30#419#0" />
-            <element signature="e#453#621#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/consts/urls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -311,45 +412,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+        <state relative-caret-position="170">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#31#70#0" expanded="true" />
+            <element signature="n#!!block;n#dependencies#0;n#!!top" />
+            <element signature="n#!!block;n#eslintConfig#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+            <element signature="e#216#241#0" />
+            <element signature="e#257#308#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="e#168#638#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/fields-parser.js" />
+    <entry file="file://$PROJECT_DIR$/src/utils/translate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#398#838#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/decodes/q-decode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#317#564#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/decodes/fields-parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#618#1201#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/loaders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="17">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#222#370#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/decodes/alts-decode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="151" column="25" selection-start-line="151" selection-start-column="25" selection-end-line="151" selection-end-column="25" />
+          <folding>
+            <element signature="n#Test#0" />
+            <element signature="n#!!block;n#constructor#0;n#Test#0" />
+            <element signature="n#!!block;n#add#0;n#Test#0" />
+            <element signature="n#!!block;n#run#0;n#Test#0" />
+            <element signature="n#!!block;n#parse#0;n#Test#0" />
+            <element signature="e#593#766#0" />
+            <element signature="e#868#2120#0" />
+            <element signature="e#874#961#0" />
+            <element signature="e#918#955#0" />
+            <element signature="e#967#1058#0" />
+            <element signature="e#1015#1052#0" />
+            <element signature="e#1064#1153#0" />
+            <element signature="e#1110#1147#0" />
+            <element signature="e#1159#1252#0" />
+            <element signature="e#1209#1246#0" />
+            <element signature="e#1258#1456#0" />
+            <element signature="e#1303#1450#0" />
+            <element signature="e#1480#1592#0" />
+            <element signature="e#1533#1586#0" />
+            <element signature="e#1598#1709#0" />
+            <element signature="e#1650#1703#0" />
+            <element signature="e#1715#1835#0" />
+            <element signature="e#1776#1829#0" />
+            <element signature="e#1869#1989#0" />
+            <element signature="e#1930#1983#0" />
+            <element signature="e#2025#2117#0" />
+            <element signature="e#2074#2111#0" />
+            <element signature="e#2122#2725#0" />
+            <element signature="e#2128#2224#0" />
+            <element signature="e#2181#2218#0" />
+            <element signature="e#2230#2333#0" />
+            <element signature="e#2283#2327#0" />
+            <element signature="e#2339#2425#0" />
+            <element signature="e#2386#2419#0" />
+            <element signature="e#2431#2533#0" />
+            <element signature="e#2480#2527#0" />
+            <element signature="e#2539#2625#0" />
+            <element signature="e#2586#2619#0" />
+            <element signature="e#2631#2722#0" />
+            <element signature="e#2678#2716#0" />
+            <element signature="e#2761#2882#0" />
+            <element signature="e#2801#2879#0" />
+            <element signature="e#2916#3040#0" />
+            <element signature="e#2957#3037#0" />
+            <element signature="e#3227#3337#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/decodes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/data/admin_level_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret column="772" selection-start-column="772" selection-end-column="772" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/geometrics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="n#Strip#0" />
+            <element signature="n#Sector#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/decodes/schedule/time-decode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/libs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#30#419#0" />
+            <element signature="e#453#621#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/notam.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="102">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#31#70#0" expanded="true" />
-            <element signature="e#260#685#0" />
+            <element signature="n#!!block;n#render#0;n#Notam#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/notam.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/fields-parser.js">
+    <entry file="file://$PROJECT_DIR$/src/consts/action-names.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/lmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#LMap#0" />
+            <element signature="n#!!block;n#componentDidMount#0;n#LMap#0" />
+            <element signature="n#!!block;n#shouldComponentUpdate#0;n#LMap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#31#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/polygons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/libs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#0#46#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/notam/decodes/time-decode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maps/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

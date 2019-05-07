@@ -1,6 +1,6 @@
 import {NOTAM_ERROR, NOTAM_LOADING, NOTAM_SUCCESS, SEARCH_VALUE} from '../consts/action-names'
 
-export default (state = {loading: false, value: 'Q0752_19'}, action) => {
+export default (state = {}, action) => {
     switch (action.type) {
         case SEARCH_VALUE:
             return {

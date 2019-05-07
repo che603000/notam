@@ -8,7 +8,15 @@ const redusers = combineReducers({
     search,
     notam
 });
-const store = createStore(redusers, applyMiddleware(thunk));
+
+const initState = {
+    search: {
+        loading: false,
+        value: 'K8486_19'
+    }
+};
+
+const store = createStore(redusers, initState, applyMiddleware(thunk));
 //const unsubscribe = store.subscribe(() => console.log(store.getState()))
 
 export default store;
